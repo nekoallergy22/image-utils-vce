@@ -1,0 +1,78 @@
+{
+  "name": "image-utils",
+  "displayName": "Image Utils",
+  "description": "Image comparison and preview utilities for VS Code",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:imageUtils.openComparison",
+    "onCommand:imageUtils.openPreview",
+    "onCommand:imageUtils.openRename"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "imageUtils.openComparison",
+        "title": "Compare Images"
+      },
+      {
+        "command": "imageUtils.openPreview",
+        "title": "Preview Images"
+      },
+      {
+        "command": "imageUtils.openRename",
+        "title": "Rename Images"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "imageUtils.openComparison",
+          "title": "Image Utils: Compare Images"
+        },
+        {
+          "command": "imageUtils.openPreview",
+          "title": "Image Utils: Preview Images"
+        },
+        {
+          "command": "imageUtils.openRename",
+          "title": "Image Utils: Rename Images"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "imageUtils.openComparison",
+          "title": "Compare Images", 
+          "group": "navigation",
+          "when": "explorerResourceIsFolder && listMultiSelection"
+        },
+        {
+          "command": "imageUtils.openPreview",
+          "title": "Preview Images",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder && !listMultiSelection"
+        },
+        {
+          "command": "imageUtils.openRename",
+          "title": "Rename Images",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder && !listMultiSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
