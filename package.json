@@ -2,7 +2,8 @@
   "name": "image-utils",
   "displayName": "Image Utils",
   "description": "Image comparison and preview utilities for VS Code",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "icon": "resources/icon.png",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -47,19 +48,19 @@
         {
           "command": "imageUtils.openComparison",
           "title": "Compare Images", 
-          "group": "navigation",
+          "group": "imageutils@1",
           "when": "explorerResourceIsFolder && listMultiSelection"
         },
         {
           "command": "imageUtils.openPreview",
           "title": "Preview Images",
-          "group": "navigation",
+          "group": "imageutils@2",
           "when": "explorerResourceIsFolder && !listMultiSelection"
         },
         {
           "command": "imageUtils.openRename",
           "title": "Rename Images",
-          "group": "navigation",
+          "group": "imageutils@3",
           "when": "explorerResourceIsFolder && !listMultiSelection"
         }
       ]

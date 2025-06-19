@@ -1,0 +1,33 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4A90E2" stroke="#2C5282" stroke-width="3"/>
+  
+  <!-- Main image icon -->
+  <rect x="30" y="35" width="35" height="28" rx="3" fill="#FFFFFF" stroke="#2C5282" stroke-width="2"/>
+  <circle cx="37" cy="44" r="3" fill="#4A90E2"/>
+  <polygon points="30,55 40,48 50,52 65,45 65,63 30,63" fill="#E2E8F0"/>
+  
+  <!-- Comparison arrows -->
+  <path d="M70 45 L80 50 L70 55 Z" fill="#FFFFFF"/>
+  <path d="M70 55 L80 50 L70 45 Z" fill="#FFFFFF" opacity="0.7"/>
+  
+  <!-- Second image icon -->
+  <rect x="85" y="35" width="35" height="28" rx="3" fill="#FFFFFF" stroke="#2C5282" stroke-width="2"/>
+  <circle cx="92" cy="44" r="3" fill="#4A90E2"/>
+  <polygon points="85,55 95,48 105,52 120,45 120,63 85,63" fill="#E2E8F0"/>
+  
+  <!-- Tools icons at bottom -->
+  <g transform="translate(25, 75)">
+    <!-- Preview eye icon -->
+    <circle cx="15" cy="10" r="8" fill="#FFFFFF" stroke="#2C5282" stroke-width="1.5"/>
+    <circle cx="15" cy="10" r="3" fill="#2C5282"/>
+    
+    <!-- Compare icon -->
+    <rect x="35" y="5" width="10" height="8" rx="1" fill="#FFFFFF" stroke="#2C5282" stroke-width="1.5"/>
+    <rect x="48" y="7" width="10" height="8" rx="1" fill="#FFFFFF" stroke="#2C5282" stroke-width="1.5"/>
+    
+    <!-- Rename/edit icon -->
+    <path d="M68 6 L72 2 L76 6 L72 18 L68 14 Z" fill="#FFFFFF" stroke="#2C5282" stroke-width="1.5"/>
+    <rect x="68" y="16" width="8" height="2" fill="#2C5282"/>
+  </g>
+</svg>

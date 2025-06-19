@@ -42,8 +42,7 @@ The extension generates complete HTML documents with embedded CSS and JavaScript
   - `getPreviewWebviewContent()` - Generates HTML for image preview
   - `getRenameWebviewContent()` - Generates HTML for batch rename interface
 - Helper functions for file system operations (`getImageFiles`, `findMatchingImages`, `executeRename`)
-- Sample images in `sample_images/` for testing
 
 ## Extension Packaging
-- Built extensions are stored in `package/` directory as `.vsix` files
+- Built extensions are stored in `vsix/` directory as `.vsix` files
 - Current version: 0.0.4 with batch rename functionality
